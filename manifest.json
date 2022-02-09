@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "来战",
+  "version": "1.4",
+  "description": "only for lol",
+  "icons": {
+    "128": "imgs/di.png",
+    "48": "imgs/di.png",
+    "16": "imgs/di.png"
+  },
+  "action": {
+    "default_icon": "imgs/di.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "options_page": "options.html",
+  "permissions": ["storage", "notifications", "contextMenus", "tabs"],
+  "host_permissions": ["https://lol.qq.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://lol.qq.com/*"],
+      "js": ["js/content.js"]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+body {
+  width: 200px;
+  padding: 10px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.flex-box {
+  display: flex;
+}
+
+.no-shrink {
+  flex-shrink: 0;
+}
+
+#chosen {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+}
+
+button {
+  margin-top: 20px;
+}
